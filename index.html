@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Netflix</title>
+	</head>
+
+	<body class="text-white">
+		<header class="sticky-top">
+			<nav class="navbar navbar-expand-lg navbar-dark px-2">
+				<div class="container-fluid">
+					<div class="d-flex">
+						<a class="navbar-brand" href="#">
+							<img src="assets/img/netflix_logo.png" alt="" width="60" />
+						</a>
+						<ul class="navbar-nav d-none d-lg-flex">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Tv Shows</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Movies</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Recently Added</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">My List</a>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav ms-auto d-lg-none">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle d-lg-none"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Sfoglia
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Home</a></li>
+									<li><a class="dropdown-item" href="#">Tv Shows</a></li>
+									<li><a class="dropdown-item" href="#">Movies</a></li>
+									<li><a class="dropdown-item" href="#">Recently Added</a></li>
+									<li><a class="dropdown-item" href="#">My List</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="d-flex align-items-center">
+						<div class="d-flex align-items-center">
+							<div class="input-group rounded">
+								<input
+									type="search"
+									class="form-control rounded bg-black border-0 d-none d-lg-inline-block"
+									placeholder="Search"
+									aria-label="Search"
+									aria-describedby="search-addon"
+								/>
+								<span class="input-group-text border-0 bg-black" id="search-addon">
+									<ion-icon
+										name="search-outline"
+										size="large"
+										style="color: white"
+									></ion-icon>
+								</span>
+							</div>
+						</div>
+
+						<div class="d-flex align-items-center">
+							<ion-icon name="notifications-outline" size="large"></ion-icon>
+						</div>
+
+						<div>
+							<ul class="navbar-nav ms-auto">
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										id="navbarDropdown"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<img src="assets/img/avatar.png" alt="" width="32px" />
+									</a>
+
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="profilo.html">Profilo</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="d-flex px-3 py-3 justify-content-between">
+				<div class="d-flex">
+					<h2>Tv Shows</h2>
+
+					<div class="d-flex ms-3">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Genere
+								</a>
+								<ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item text-white" href="#">Action</a></li>
+									<li><a class="dropdown-item text-white" href="#">Drama</a></li>
+									<li><a class="dropdown-item text-white" href="#">Musical</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="d-flex">
+					<div class="d-flex align-items-center mx-1">
+						<ion-icon name="filter-outline" class="border border-1 p-2"></ion-icon>
+					</div>
+					<div class="d-flex align-items-center border-1 mx-1">
+						<ion-icon name="grid-outline" class="border border-1 p-2"></ion-icon>
+					</div>
+				</div>
+			</div>
+			<div class="px-3 mt-3">
+				<h2>Trending</h2>
+				<div id="carouselExampleCaptions1" class="carousel slide">
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions1"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions1"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions1"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div
+								class="row container-fluid position-relative overflow-auto flex-nowrap"
+							>
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media0.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media1.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media2.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media4.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div
+								class="row container-fluid position-relative overflow-auto flex-nowrap"
+							>
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media5.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media6.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media7.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media8.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div
+								class="row container-fluid position-relative overflow-auto flex-nowrap"
+							>
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media9.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media10.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media11.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media12.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleCaptions1"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleCaptions1"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<div class="px-3 mt-3">
+				<h2>Watch it Again</h2>
+				<div id="carouselExampleCaptions" class="carousel slide">
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row container-fluid overflow-auto flex-nowrap">
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media13.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media14.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media15.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media16.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row container-fluid overflow-auto flex-nowrap">
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media17.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media18.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media19.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media20.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row container-fluid overflow-auto flex-nowrap">
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media21.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media22.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media23.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media24.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<div class="px-3 mt-3">
+				<h2>New Releases</h2>
+				<div id="carouselExampleCaptions2" class="carousel slide">
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions2"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions2"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions2"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div
+								class="row container-fluid position-relative overflow-auto flex-nowrap"
+							>
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media25.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media26.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media27.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media28.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div
+								class="row container-fluid position-relative overflow-auto flex-nowrap"
+							>
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media29.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media30.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media7.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media8.webp"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div
+								class="row container-fluid position-relative overflow-auto flex-nowrap"
+							>
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media9.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media10.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media11.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+
+								<div class="col-4 col-md-3">
+									<div class="card border-2 border-black">
+										<img
+											src="assets/img/media/media12.jpg"
+											class="card-img-top"
+											alt="serie"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleCaptions2"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleCaptions2"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container my-2">
+				<nav class="my-5">
+					<a href="####"
+						><ion-icon
+							name="logo-facebook"
+							size="large"
+							style="color: gray"
+						></ion-icon
+					></a>
+					<a href="###"
+						><ion-icon
+							name="logo-instagram"
+							size="large"
+							style="color: gray"
+						></ion-icon
+					></a>
+					<a href="###"
+						><ion-icon name="logo-twitter" size="large" style="color: gray"></ion-icon
+					></a>
+					<a href="###"
+						><ion-icon name="logo-youtube" size="large" style="color: gray"></ion-icon
+					></a>
+				</nav>
+				<nav class="row my-3">
+					<a href="###" class="col-md-3 mt-2 text-white">Audio and subtitles</a>
+					<a href="###" class="col-md-3 mt-2 text-white">Audio Description </a>
+					<a href="###" class="col-md-3 mt-2 text-white">Help Center</a>
+					<a href="###" class="col-md-3 mt-2 text-white">Gift Cards</a>
+
+					<a href="###" class="col-md-3 mt-2 text-white">Media Center</a>
+					<a href="###" class="col-md-3 mt-2 text-white">Investor Relations </a>
+					<a href="###" class="col-md-3 mt-2 text-white">Jobs</a>
+					<a href="###" class="col-md-3 mt-2 text-white">Terms of Use</a>
+
+					<a href="###" class="col-md-3 mt-2 text-white">Privacy</a>
+					<a href="###" class="col-md-3 mt-2 text-white">Legal Relations </a>
+					<a href="###" class="col-md-3 mt-2 text-white">Cookie Preferences</a>
+					<a href="###" class="col-md-3 mt-2 text-white">Corporate info</a>
+
+					<a href="###" class="col-4 col-md-3 mt-2 text-white">Contact Us</a>
+				</nav>
+				<button type="button" class="btn btn-outline-secondary my-3">
+					Service Code
+				</button>
+				<p class="h6 my-3">&copy; 1997-2019 Netflix, inc {31ui2hj321ui3hio9}</p>
+			</div>
+		</footer>
+
+		<!-- Bootstrap.js -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="assets/js/script.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>

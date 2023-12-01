@@ -1,0 +1,8 @@
+header.onscroll {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut{
+  from{background-color: black;}
+  to{background-color: transparent;}
+}

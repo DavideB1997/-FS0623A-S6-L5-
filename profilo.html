@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Profile Page</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/netflix_logo.png" width="60" height="30" alt="" />
+				</a>
+			</nav>
+		</header>
+
+		<main class="d-flex justify-content-center">
+			<div class="col-10 col-md-6 border-bottom">
+				<h1 class="display-2 mx-1 my-5 text-white mb-0 border-bottom">
+					Edit Profile
+				</h1>
+				<div class="d-flex mt-3">
+					<div class="col-3 mx-1">
+						<img src="assets/img/avatar.png" width="100%" alt="" />
+					</div>
+
+					<form class="mx-3">
+						<fieldset class="border-bottom border-white p-0">
+							<input
+								type="text"
+								class="form-control bg-light"
+								placeholder="Strive Student"
+							/>
+							<p class="text-white mt-4 mb-0">Language:</p>
+							<select name="language">
+								<option value="It">Italiano</option>
+								<option value="En">Inglese</option>
+								<option value="Hy">Hylian</option>
+							</select>
+						</fieldset>
+						<fieldset class="border-bottom border-white">
+							<p class="text-white h5 mt-2 mb-0">Maturity Settings:</p>
+							<button type="button" class="btn btn-dark font-weight-bold mt-2">
+								ALL MATURITY SETTINGS
+							</button>
+							<p class="text-white mt-2 mb-0 h6">
+								Show titles of all maturity rating for this profile
+							</p>
+							<button type="button" class="btn btn-outline-dark font-weight-bold mt-2">
+								EDIT
+							</button>
+						</fieldset>
+						<fieldset>
+							<p class="text-white h5 my-2">Autoplay controls:</p>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckDefault"
+								/>
+								<label class="form-check-label h6 text-white" for="flexCheckDefault">
+									Autoplay next episode in a series on all devices.
+								</label>
+							</div>
+							<div class="form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckDefault"
+								/>
+								<label class="form-check-label h6 text-white" for="flexCheckDefault">
+									Autoplay next preview when browsing on all devices
+								</label>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer class="d-flex justify-content-center">
+			<div class="row justify-content-evenly col-10 col-md-6 mb-5">
+				<button
+					type="button"
+					class="col-sm-10 col-md-3 btn btn-outline-light font-weight-bold mt-5 px-4"
+				>
+					SAVE
+				</button>
+				<button
+					type="button"
+					class="col-sm-10 col-md-3 btn btn-outline-light font-weight-bold mt-5 px-4"
+				>
+					CANCEL
+				</button>
+				<button
+					type="button"
+					class="col-sm-10 col-md-4 btn btn-outline-light font-weight-bold mt-5 px-4"
+				>
+					DELETE PROFILE
+				</button>
+			</div>
+		</footer>
+	</body>
+</html>

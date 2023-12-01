@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.profilePicC{
+  border-radius: 50%;
+  overflow: hidden;
+  img{
+    width:42px;
+  }
+}
+
+
+
+header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 80%, rgba(15, 129, 159, 0) 100%);
+}
+
